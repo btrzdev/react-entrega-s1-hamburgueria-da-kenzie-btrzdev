@@ -15,10 +15,12 @@ export default function Product({ product, setCurrentSale, currentSale }) {
       <p className="product-title">{product.name}</p>
       <p className="product-category">{product.category}</p>
       <p className="product-price"> R$ {product.price}</p>
-      <button className="product-add" type="button" onClick={() => add()}>
-        {" "}
-        Adicionar
-      </button>
+      <div className="product-scroll">
+        <button className="product-add" type="button" onClick={() => add()}>
+          {" "}
+          Adicionar
+        </button>
+      </div>
     </div>
   );
 }

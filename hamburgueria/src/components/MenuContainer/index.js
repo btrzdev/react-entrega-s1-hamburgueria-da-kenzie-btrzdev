@@ -7,11 +7,13 @@ export default function MenuContainer({
 }) {
   return products.map((product) => {
     return (
-      <Product
-        product={product}
-        setCurrentSale={setCurrentSale}
-        currentSale={currentSale}
-      />
+      <div className="scroll">
+        <Product
+          product={product}
+          setCurrentSale={setCurrentSale}
+          currentSale={currentSale}
+        />
+      </div>
     );
   });
 }
