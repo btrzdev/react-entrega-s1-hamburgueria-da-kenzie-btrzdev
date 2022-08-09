@@ -139,17 +139,21 @@ function App() {
         Pesquisar
       </button>
       <h2>{result}</h2>
-      <div className="container-card">
-        <MenuContainer
-          products={filteredProducts}
-          currentSale={currentSale}
-          setCurrentSale={setCurrentSale}
-        />
-      </div>
-      <div>
-        <div className="cart-ti">Carrinho de compras</div>
-        <Cart currentSale={currentSale} setCurrentSale={setCurrentSale} />
-        <TotalCart currentSale={currentSale} product={products} />
+      <div className="container">
+        <div className="container-card">
+          <MenuContainer
+            products={filteredProducts}
+            currentSale={currentSale}
+            setCurrentSale={setCurrentSale}
+          />
+        </div>
+        <div className="cart-container">
+          <div className="cart-ti">
+            <h3> Carrinho de compras</h3>
+          </div>
+          <Cart currentSale={currentSale} setCurrentSale={setCurrentSale} />
+          <TotalCart currentSale={currentSale} product={products} />
+        </div>
       </div>
     </div>
   );

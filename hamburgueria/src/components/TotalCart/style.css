@@ -15,14 +15,8 @@
   background-color: #f5f5f5;
   width: 340px;
   height: 150px;
-  margin-left: 44px;
+  margin-left: 26%;
   justify-content: space-between;
 }
 @media (min-width: 768px) {
-  .div-price {
-    left: 500px;
-    top: -750px;
-    position: relative;
-    margin-left: 20px;
-  }
 }

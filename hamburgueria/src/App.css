@@ -5,7 +5,6 @@
   width: 80vw;
 }
 .container-card {
-  width: 100vh;
   display: flex;
   flex-wrap: none;
   overflow-x: auto;
@@ -53,16 +52,16 @@ header {
   margin-left: 90px;
   overflow-x: hidden;
 }
+.cart-container {
+  margin-top: 1rem;
+}
 .cart-ti {
-  position: relative;
-  left: 35px;
-  top: 0px;
-  width: 320px;
-  height: 45px;
-  text-align: left;
+  width: 20rem;
+  height: 3rem;
+  justify-content: center;
   font-weight: bold;
   display: flex;
-  margin: 10px;
+  margin-left: 27%;
   align-items: center;
   padding: 10px;
   color: white;
@@ -78,13 +77,13 @@ header {
 
 @media (min-width: 768px) {
   .container-card {
-    max-width: 1000px;
     display: flex;
     flex-wrap: wrap;
     overflow-x: hidden;
+    width: 95%;
     margin-left: 0px;
   }
-  .App {
+  .container {
     display: flex;
   }
 
@@ -107,8 +106,14 @@ header {
     left: 70px;
     width: 100vw;
   }
-  .cart-ti {
-    left: 510px;
-    top: -750px;
+
+  .cart-container {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+  }
+
+  button:hover {
+    cursor: pointer;
   }
 }
